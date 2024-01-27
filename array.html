@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- <script>
+        var arr=[10,22,12,23,35,65,43]
+        
+        for(var i=0;i<arr.length;i++){
+        if(arr[i]%2==0){
+    
+            console.log("even no is",arr[i])
+        }else{
+            console.log("odd no is",arr[i]) 
+        }
+        
+
+        }
+    </script> -->
+
+    <!-- <script>
+    var arr=[10,20,30,40];
+    var sum=0;
+    for(var i=0;i<arr.length;i++){
+        sum+=arr[i]
+    }
+  
+    console.log(sum)
+    
+</script>  -->
+    <!-- <script>
+    var arr=[10,25,35,40];
+    var sum=0;
+    for(var i=0;i<arr.length;i++){
+        if(arr[i]%2==0)
+        sum+=arr[i]
+    }
+  
+    console.log(sum)
+    
+</script>  -->
+    <!-- <script>
+    var arr=[10,25,35,40];
+    var sum=0;
+    for(var i=0;i<arr.length;i++){
+        if(arr[i]%2!=0)
+        sum+=arr[i]
+    }
+  
+    console.log(sum)
+    
+</script>  -->
+    <!-- <script>
+    var arr=[10,25,35,40];
+    var largeNum=arr[0];
+    for(var i=0;i<arr.length;i++){
+        if(arr[i]>largeNum){
+    largeNum=arr[i]
+    }
+}
+    console.log(largeNum)
+    
+</script>   -->
+    <!-- <script>
+    var arr=[10,25,35,40];
+    var smallestNum=arr[0];
+    for(var i=0;i<arr.length;i++){
+        if(arr[i]<smallestNum){
+    smallestNum=arr[i]
+    }
+} 
+    console.log(smallestNum)
+    
+</script>  -->
+    <!-- <script>
+    var arr=[10,5,6,40];
+    
+    arr.sort((a,b)=>{
+        return a-b;
+    })
+    document.write(arr);
+</script> -->
+
+    <script>
+        var arr = [10, 25, 35, 40];
+        var largeNum = 0;
+        var seclargest = 0;
+        for (var i = 0; i < arr.length; i++) {
+            if (arr[i] > largeNum) {
+                seclargest = largeNum
+                largeNum = arr[i]
+            }
+
+            if (seclargest < arr[i] && largeNum > arr[i]) {
+                seclargest = arr[i]
+
+            }
+        }
+        console.log(seclargest)
+    </script>
+    <script>
+        arr=[12,15,16,12,11,11,13,14,15,17,]
+        console.log(arr)
+        arr= [...new Set(arr)]; 
+        console.log(arr)
+    </script>
+</body>
+
+</html>

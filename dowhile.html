@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- <script>
+        //   wap program no is prime or not  
+        var n = prompt("enter a number ")
+        var fleg = 0
+        i = 2
+        do {
+            if (n % 2 == 0) {
+                fleg = 1;
+                break;
+            }
+            i++
+        } while (i <= n) {
+            if (fleg == 0) {
+                document.write("number is prime ")
+            }
+            else {
+                document.write("numner  is not prime")
+            }
+        }
+    </script> -->
+    <!-- write a program to count a digit of a number  -->
+    <!-- <script>
+        var n = prompt("enter a digit")
+        var count = 0
+        do {
+            n=parseInt(n / 10);
+            count++;
+        } while (n > 0) {
+
+           document.write("Number of digits:  ", count);
+        }
+    </script> -->
+    <!-- WRITE A PROGRAM TO REVERSE A NUMBER -->
+    <!-- <script>
+        var no=12345
+     var rev =0
+    
+    do{
+        rev=(rev*10)+(no%10)
+        no=parseInt(no/10)
+       
+
+    }while(no!=0){
+    document.write(rev)
+    }
+    </script> -->
+    <!-- palindrome no -->
+    <!-- <script>
+        var no = 121
+        var temp = no
+        var rev = 0
+        var rem
+       do {
+            rem = temp % 10
+            rev = (rev * 10)
+            temp = temp / 10
+
+        } while (temp != 0){
+        if (temp == rev) {
+            document.write("number is palinmdrome")
+
+        } else {
+            dosument.write("no is not palindrome")
+        }
+    }
+    </script> -->
+    <!-- <script>
+         var no = 153
+        var temp = no
+        var rev = 0
+      do {
+            rem = temp % 10
+            rev = rev * 10
+            temp = parseInt(temp / 10)
+
+        }
+        while (temp != 0) {
+        if (temp == rev) {
+            document.write("Number  is armstrom",)
+        } else {
+            document.write("Number is not armstrom")
+        }
+    }
+    </script> -->
+    <!-- <script>
+        var num = 1;
+        sum = 0;
+
+        do {
+            for (var i = 1; i < num; i++) {
+                if (num % i == 0) {
+                    sum = sum + i;
+                }
+            }
+            if (sum == num) {
+                document.write(num, "number is perfect")
+            }
+            num++
+
+        } while (num <= 0)
+
+    </script> -->
+    <script>
+        var num=parseInt(prompt("ente ra number"))
+
+        var a = 0, b = 1;
+        var c;
+        do{
+            
+           for(i=0 ;i<=num;i++) {
+            
+            c = a + b;
+            document.write(c);
+            
+            a = b;
+            b = c;
+        
+           }
+        }while(c<num)
+    </script>
+</body>
+
+</html>

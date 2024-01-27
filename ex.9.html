@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Event Conference Page</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="event-styles.css">
+  <style>* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+  }
+  
+  /* Navigation styles */
+  .navbar {
+    margin-bottom: 30px;
+  }
+  
+  /* Section Styles */
+  section {
+    padding: 60px 0;
+  }
+  
+  /* Event details styles */
+  #details .container {
+    text-align: center;
+  }
+  
+  /* Schedule styles */
+  #schedule .container {
+    text-align: center;
+  }
+  
+  /* Speakers styles */
+  #speakers .container {
+    text-align: center;
+  }
+  
+  /* Registration Form Styles */
+  #register .container {
+    text-align: center;
+    max-width: 600px; /* Makes the form not too wide on larger screens */
+    margin: auto;
+  }
+  
+  #registration-form {
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+  }
+  
+  #registration-form .form-group {
+    margin-bottom: 1rem;
+  }
+  
+  #registration-form label {
+    text-align: left;
+    display: block;
+    margin-bottom: .5rem;
+  }
+  
+  #registration-form .form-control {
+    height: 40px;
+    padding: 5px 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+  }
+  
+  #registration-form .btn-primary {
+    color: #fff;
+    background-color: #007bff;
+    border-color: #007bff;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  #registration-form .btn-primary:hover {
+    background-color: #0056b3;
+    border-color: #004085;
+  }
+  
+  /* Location Map Styles */
+  #map {
+    height: 400px;
+    width: 100%;
+  }
+  
+  /* Footer Styles */
+  footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+  }
+  </style>
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <a class="navbar-brand" href="#">TechConf 2023</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse"
+  data-target="#navbarNav" aria-controls="navbarNav"
+  aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ml-auto">
+          <li class="nav-item active">
+              <a class="nav-link" href="#details">Details</a>
+          </li>
+          <li class="nav-item">
+              <a class="nav-link" href="#schedule">Schedule</a>
+          </li>
+          <li class="nav-item">
+              <a class="nav-link" href="#speakers">Speakers</a>
+          </li>
+          <li class="nav-item">
+              <a class="nav-link" href="#register">Register</a>
+          </li>
+      </ul>
+  </div>
+</nav>
+
+<main>
+  <section id="details" class="py-5">
+      <div class="container">
+          <h2 class="text-center mb-3">Event Details</h2>
+          <!-- Event details go here -->
+      </div>
+  </section>
+
+  <section id="schedule" class="py-5 bg-light">
+      <div class="container">
+          <h2 class="text-center mb-3">Event Schedule</h2>
+          <!-- Schedule details go here -->
+      </div>
+  </section>
+
+  <section id="speakers" class="py-5">
+      <div class="container">
+          <h2 class="text-center mb-3">Speakers</h2>
+          <!-- Speaker details go here -->
+      </div>
+  </section>
+
+  <section id="register" class="py-5 bg-light">
+      <div class="container">
+          <h2 class="text-center mb-3">Registration</h2>
+          <form id="registration-form">
+              <div class="form-group">
+                  <label for="fullName">Full Name</label>
+                  <input type="text" class="form-control" id="fullName"
+                  name="fullName" placeholder="Enter full name" required>
+              </div>
+              <div class="form-group">
+                  <label for="emailAddress">Email address</label>
+                  <input type="email" class="form-control" id="emailAddress"
+                  name="emailAddress" placeholder="Enter email" required>
+              </div>
+              <div class="form-group">
+                  <label for="ticketType">Ticket Type</label>
+                  <select class="form-control" id="ticketType" name="ticketType" required>
+                      <option value="">Select ticket type</option>
+                      <option value="general">General Admission</option>
+                      <option value="vip">VIP</option>
+                      <option value="student">Student</option>
+                  </select>
+              </div>
+              <button type="submit" class="btn btn-primary">Submit Registration</button>
+          </form>
+      </div>
+  </section>
+
+  <section id="location" class="py-5">
+      <div class="container">
+          <h2 class="text-center mb-3">Location</h2>
+          <div id="map"></div>
+      </div>
+  </section>
+</main>
+
+<footer class="bg-dark text-white text-center py-3">
+  <p>(c) 2023 TechConf. All Rights Reserved.</p>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<script src="event-scripts.js"></script>
+<script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap" async defer></script>
+</body>
+</html>

@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #form-control {
+            border: 1px solid gray;
+            border-radius: 5px;
+            text-align: left;
+            width: 350px;
+            height: 500px;
+            display: block;
+            margin: auto;
+            margin-top: 20px;
+            padding-left: 10px;
+
+        }
+
+        hi {
+            font-weight: bold;
+            font-family: 'Times New Roman', Times, serif;
+        }
+
+        input {
+            width: 320px;
+            height: 20px;
+
+            margin-top: 5px;
+        }
+
+        .mo {
+            display: flex;
+            width: 330px;
+            padding-right: 5px;
+
+
+        }
+
+        #in {
+            margin-left: 5px;
+        }
+
+        select {
+            margin-top: 5px;
+            border: 1px solid gray;
+
+        }
+
+        #btn {
+            background-color: #f0c14b;
+            border-color: #a88734 #9c7e31 #846a29;
+            border-radius: 5px;
+            display: block;
+            margin: auto;
+            width: 250px;
+            height: 30px;
+            color: white;
+            cursor: pointer;
+        }
+
+        .a-size-small {
+            font-size: 12px !important;
+            line-height: 1.5 !important;
+        }
+
+        .a-spacing-top-medium {
+            margin-top: 18px !important;
+
+        }
+
+        .a-row {
+            width: 100%;
+        }
+
+        .a-box .a-divider.a-divider-section .a-divider-inner,
+        .a-color-base-background .a-divider.a-divider-section .a-divider-inner,
+        .a-divider.a-divider-section .a-divider-inner {
+            height: 44px;
+            margin-bottom: -18px;
+            background: linear-gradient(to bottom, rgba(0, 0, 0, .14), rgba(0, 0, 0, .03) 3px, transparent);
+            z-index: 0;
+            zoom: 1;
+        }
+
+        div {
+            display: block;
+        }
+        .a-section:last-child{
+            margin-bottom: 0;
+
+        }
+        .a-section{
+            margin-bottom: 22px;
+        }
+        .a-spacing-top-extra-large{
+            margin-top: 26px!important;
+        }
+        .a-size-mini{
+            font-size: 11px!important;
+            line-height: 1.465!important;
+        }
+        .a-text-center{
+            text-align: center!important;
+        }
+        .a-spacing-small, .a-ws .a-ws-spacing-small{
+            margin-bottom: 10px!important;
+        }
+        .a-link-normal{
+            padding-right: 15px;
+        }
+        input:hover{
+            box-shadow: 0 1px 0 rgba(77, 248, 15, 0.5), 0 1px 0 rgba(8, 146, 233, 0.07) inset;
+        }
+        select:hover{
+            box-shadow: 0 1px 0 rgba(77, 248, 15, 0.5), 0 1px 0 rgba(8, 146, 233, 0.07) inset;
+        }
+    </style>
+</head>
+
+<body>
+    <form>
+        <div id="form-control">
+            <div>
+                <h1>
+                    Create Account
+                </h1>
+            </div>
+            <div>
+                <span>your name</span><br>
+                <input type="text" name="" id="" placeholder="first and last name">
+            </div>
+            <div>
+                <span>mobile number</span><br>
+                <div class="mo">
+                    <select name="countryCode" autocomplete="off" data-a-touch-header="Country/Region Code"
+                        id="auth-country-picker" tabindex="0" data-action="a-dropdown-select"
+                        class="a-native-dropdown a-declarative">
+
+
+
+                        <option data-calling-code="93" data-country-code="AF" value="AF"
+                            data-a-html-content="Afghanistan &lt;span dir='ltr'&gt;+93&lt;/span&gt;">
+
+                            AF +93
+                        </option>
+
+
+
+                        <option data-calling-code="355" data-country-code="AL" value="AL"
+                            data-a-html-content="Albania &lt;span dir='ltr'&gt;+355&lt;/span&gt;">
+
+                            AL +355
+                        </option>
+
+
+
+                        <option data-calling-code="213" data-country-code="DZ" value="DZ"
+                            data-a-html-content="Algeria &lt;span dir='ltr'&gt;+213&lt;/span&gt;">
+
+                            DZ +213
+                        </option>
+
+
+
+                        <option data-calling-code="1" data-country-code="AS" value="AS"
+                            data-a-html-content="American Samoa &lt;span dir='ltr'&gt;+1&lt;/span&gt;">
+
+                            AS +1
+                        </option>
+
+
+
+                        <option data-calling-code="376" data-country-code="AD" value="AD"
+                            data-a-html-content="Andorra &lt;span dir='ltr'&gt;+376&lt;/span&gt;">
+
+                            AD +376
+                        </option>
+
+
+
+                        <option data-calling-code="244" data-country-code="AO" value="AO"
+                            data-a-html-content="Angola &lt;span dir='ltr'&gt;+244&lt;/span&gt;">
+
+                            IN +91
+                        </option>
+
+
+
+
+
+
+                    </select>
+
+                    <input type="text" name="" placeholder="entet mobile no" id="in">
+                </div>
+            </div>
+            <div>
+                <span>Email</span><br>
+                <input type="email" name="" placeholder="enter email" id="">
+            </div>
+            <div>
+                <span>password</span><br>
+                <input type="password" name="" id="" placeholder="enter password">
+            </div><br>
+            <div>
+                <input type="button" value="Create Account" id="btn">
+
+
+            </div>
+            <div id="legalTextRow" class="a-row a-spacing-top-medium a-size-small">
+                By creating an account or logging in, you agree to Amazon’s <a href="">Conditions of Use</a> and <a
+                    href="">Privacy Policy</a>.
+            </div><br><br>
+            
+            <div class="a-divider a-divider-section"><div class="a-divider-inner"></div></div>
+            <div class="a-row">
+                Already have an account?
+                <a class="a-link-emphasis" href="">
+                    Sign in
+                </a>
+            </div>
+        </div>
+    </form>
+    <div class="a-section a-spacing-top-extra-large auth-footer">
+
+
+
+
+        <div class="a-divider a-divider-section">
+            <div class="a-divider-inner"></div>
+        </div>
+
+        <div class="a-section a-spacing-small a-text-center a-size-mini">
+            <span class="auth-footer-seperator"></span>
+
+
+
+
+
+
+
+
+
+
+            <a class="a-link-normal" target="_blank"
+                href="/gp/help/customer/display.html/ref=ap_desktop_footer_cou?ie=UTF8&amp;nodeId=200545940">
+                Conditions of Use
+            </a>
+            <span class="auth-footer-seperator"></span>
+
+
+
+
+
+
+
+
+
+            <a class="a-link-normal" target="_blank"
+                href="/gp/help/customer/display.html/ref=ap_desktop_footer_privacy_notice?ie=UTF8&amp;nodeId=200534380">
+                Privacy Notice
+            </a>
+            <span class="auth-footer-seperator"></span>
+
+
+
+
+
+
+
+
+
+            <a class="a-link-normal" target="_blank" href="/help">
+                Help
+            </a>
+            <span class="auth-footer-seperator"></span>
+
+
+
+        </div>
+
+
+
+
+        <div class="a-section a-spacing-none a-text-center">
+
+
+
+
+
+
+            <span class="a-size-mini a-color-secondary">
+                © 1996-2024, Amazon.com, Inc. or its affiliates
+            </span>
+
+        </div>
+
+    </div>
+</body>
+
+</html>
